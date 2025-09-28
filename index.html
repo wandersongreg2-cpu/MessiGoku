@@ -1,14 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Meu Site no GitHub</title>
-  <style>
-    body { background-color: #f0f8ff; font-family: Arial; text-align: center; padding-top: 50px; }
-    h1 { color: #4a90e2; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Ws Multitracks | Venda de Multitracks Gospel</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-  <h1>Seja Bem Vindo a WsMultitracks!</h1>
-  <p>Seu site está online! 🎉</p>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">🎵 Multitracks Gospel</a>
+      <nav class="nav">
+        <a href="#home">Início</a>
+        <a href="#tracks">Músicas</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a href="carrinho.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Carrinho (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Desbloqueie o Poder da Música Gospel</h1>
+        <p>Venda, crie, ensaie e produza com multitracks profissionais de músicas gospel.</p>
+        <a href="#tracks" class="btn btn-large">Ver Músicas Disponíveis</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/500x400/1e3a8a/ffffff?text=Multitracks+Gospel" alt="Multitracks Gospel" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Músicas Disponíveis -->
+  <section id="tracks" class="tracks">
+    <div class="container">
+      <h2 class="section-title">🔥 Músicas Disponíveis</h2>
+      <div class="tracks-grid">
+        <!-- Track 1 -->
+        <div class="track-card">
+          <img src="https://via.placeholder.com/300x200/0f172a/ffffff?text=Jesus+É+Senhor" alt="Jesus É Senhor" />
+          <h3>Jesus É Senhor</h3>
+          <p>Estilo: Louvor Contemporâneo</p>
+          <div class="track-details">
+            <span><i class="fas fa-microphone-alt"></i> 12 pistas</span>
+            <span><i class="fas fa-clock"></i> 4:30</span>
+          </div>
+          <div class="track-price">
+            R$ 99,90
+          </div>
+          <button class="btn btn-add" data-id="1" data-name="Jesus É Senhor" data-price="99.90">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="track-card">
+          <img src="https://via.placeholder.com/300x200/0f172a/ffffff?text=O+Teu+Amor" alt="O Teu Amor" />
+          <h3>O Teu Amor</h3>
+          <p>Estilo: Adoração Profunda</p>
+          <div class="track-details">
+            <span><i class="fas fa-microphone-alt"></i> 10 pistas</span>
+            <span><i class="fas fa-clock"></i> 5:15</span>
+          </div>
+          <div class="track-price">
+            R$ 89,90
+          </div>
+          <button class="btn btn-add" data-id="2" data-name="O Teu Amor" data-price="89.90">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="track-card">
+          <img src="https://via.placeholder.com/300x200/0f172a/ffffff?text=Reino+De+Deus" alt="Reino de Deus" />
+          <h3>Reino de Deus</h3>
+          <p>Estilo: Poderoso & Inspirador</p>
+          <div class="track-details">
+            <span><i class="fas fa-microphone-alt"></i> 14 pistas</span>
+            <span><i class="fas fa-clock"></i> 6:02</span>
+          </div>
+          <div class="track-price">
+            R$ 119,90
+          </div>
+          <button class="btn btn-add" data-id="3" data-name="Reino de Deus" data-price="119.90">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Track 4 -->
+        <div class="track-card">
+          <img src="https://via.placeholder.com/300x200/0f172a/ffffff?text=Vida+Em+Ti" alt="Vida Em Ti" />
+          <h3>Vida Em Ti</h3>
+          <p>Estilo: Louvor Contemporâneo</p>
+          <div class="track-details">
+            <span><i class="fas fa-microphone-alt"></i> 11 pistas</span>
+            <span><i class="fas fa-clock"></i> 4:45</span>
+          </div>
+          <div class="track-price">
+            R$ 94,90
+          </div>
+          <button class="btn btn-add" data-id="4" data-name="Vida Em Ti" data-price="94.90">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Depoimentos -->
+  <section id="depoimentos" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">💬 O Que Dizem Nossos Clientes</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p>"Esses multitracks me ajudaram a montar minha primeira produção. Super realista!"</p>
+          <strong>- João, Cantor de Igreja</strong>
+        </div>
+        <div class="testimonial">
+          <p>"Comprei 3 músicas e já usei em ensaios. A qualidade é impressionante!"</p>
+          <strong>- Ana, Professora de Música</strong>
+        </div>
+        <div class="testimonial">
+          <p>"Finalmente encontrei multitracks com sonzinho verdadeiro de igreja!"</p>
+          <strong>- Daniel, Produtor Musical</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Contato -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2 class="section-title">📬 Entre em Contato</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Quer sugerir uma música? Precisa de ajuda no download? Fale conosco!</p>
+          <ul>
+            <li><i class="fas fa-envelope"></i> contato@multitracks-gospel.com</li>
+            <li><i class="fas fa-phone"></i> (11) 99999-8888</li>
+            <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+          </ul>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+          <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Multitracks Gospel. Todos os direitos reservados.</p>
+      <p><a href="#">Política de Privacidade</a> • <a href="#">Termos de Uso</a></p>
+    </div>
+  </footer>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>
